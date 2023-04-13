@@ -1,554 +1,351 @@
 const localQuotes = [
   {
-    text: 'Genius is one percent inspiration and ninety-nine percent perspiration.',
-    author: 'Thomas Edison',
+    text: 'Forty hour workweeks are a relic of the Industrial Age. Knowledge workers function like athletes — train and sprint, then rest and reassess.',
+    author: 'Naval Ravikant',
   },
   {
-    text: 'You can observe a lot just by watching.',
-    author: 'Yogi Berra',
+    text: 'Wealth creation is an evolutionarily recent positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just seeking status.',
+    author: 'Naval Ravikant',
   },
   {
-    text: 'A house divided against itself cannot stand.',
-    author: 'Abraham Lincoln',
+    text: 'You make your own luck if you stay at it long enough.',
+    author: 'Naval Ravikant',
   },
   {
-    text: 'Difficulties increase the nearer we get to the goal.',
-    author: 'Johann Wolfgang von Goethe',
+    text: 'The power to make and break habits and learning how to do that is really important.',
+    author: 'Naval Ravikant',
   },
   {
-    text: 'Fate is in your hands and no one elses',
-    author: 'Byron Pulsifer',
+    text: 'Happiness is a choice and a skill and you can dedicate yourself to learning that skill and making that choice.',
+    author: 'Naval Ravikant',
   },
   {
-    text: 'Be the chief but never the lord.',
+    text: 'The people who succeed are irrationally passionate about something.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'All the benefits in life come from compound interest — money, relationships, habits — anything of importance.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Who you do business with is just as important as what you choose to do.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'You are never going to get rich renting out your time.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'People who live far below their means enjoy a freedom that people busy upgrading their lifestyles can not fathom.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Desire is a contract that you make with yourself to be unhappy until you get what you want.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'If you are good with computers, if you are good at basic mathematics, if you are good at writing, if you are good at speaking, and if you like reading, you are set for life.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Competing without software is like competing without electricity.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Reading is the ultimate meta-skill that can be traded for anything else.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'The most important skill for getting rich is becoming a perpetual learner.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Forget rich versus poor, white-collar versus blue. It is now leveraged versus un-leveraged.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Most of the gains in life come from suffering in the short term so you can get paid in the long term.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Apply specific knowledge with leverage and eventually, you will get what you deserve.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Reading a book is not a race — the better the book, the more slowly it should be absorbed.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'If you start with the originals as your foundations, then you have enough of a worldview and understanding that you will not fear any book.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'The Lindy Effect for startups: The longer you go without shipping product, the more likely you will never ship product.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'If you want to make the wrong decision, ask everyone.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'The Internet allows you to scale any niche obsession.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Play long-term games with long-term people.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'Read what you love until you love to read.',
+    author: 'Naval Ravikant',
+  },
+  {
+    text: 'If you are willing to bleed a little every day, you may win big later.',
+    author: 'Naval Ravikant',
+  },
+   {
+    text: 'Entrepreneurship is about acquiring skills, beliefs, and character traits. To advance, I find that we must determine which skills, beliefs, and character traits we lack. Most times, we simply need to improve.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Hormozi Law: The longer you delay the ask, the bigger the ask you can make. “The longer the runway, the bigger the plane that can take off.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'When you raise your price, you increase the value the consumer receives without changing anything else about your product.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'A focused fool can accomplish more than a distracted genius.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Your most valuable asset ― Your attention.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'The point of good writing is for the reader to understand. The point of good persuasion is for the prospect to feel understood.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Building a business is risky. Living paycheck to paycheck is risky. Some risks come with upside. Others do not. Risk wisely.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Strategy is easy. Execution is hard.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'People who help others (with zero expectation) experience higher levels of fulfillment, live longer, and make more money.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Beginners overvalue thinking and undervalue doing. Advanced do the opposite.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'When demand increases, cut supply.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'It is far better to have understood why you failed than to be ignorant of why you succeeded.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'All you need to be successful is the ability to influence. Then you can use that to get everyone else to do everything else.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'You may blame your circumstances but no one else will care.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Do more of what is working.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Most people have a dramatic underestimation of how much volume it takes to be successful.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'How to stay poor: Start tomorrow.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'For anyone starting a business, focus on getting $1 from a stranger into your bank account.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'If anyone ever asks you "Can you do it for less?", just respond "I could do it for more.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'People who experience a victory early on are more likely to continue with something than those who do not.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: '10,000 cold calls will teach you more about sales than any book will.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Most already know what to do and simply do not do it. It is not ignorance. It is fear.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Having a long time horizon is one of the strongest competitive advantages in business.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'A lot of real problems can be solved by working longer hours:',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'Questions are infinitely superior to answers.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: 'If anyone ever asks you "Can you do it for less?", just respond "I could do it for more.',
+    author: 'Alex Hormozi',
+  },
+  {
+    text: `Time is a created thing. To say "I do not have time," is like saying, "I do not want to."`,
     author: 'Lao Tzu',
   },
   {
-    text: 'Nothing happens unless first we dream.',
-    author: 'Carl Sandburg',
-  },
-  {
-    text: 'Well begun is half done.',
-    author: 'Aristotle',
-  },
-  {
-    text: 'Life is a learning experience, only if you learn.',
-    author: 'Yogi Berra',
-  },
-  {
-    text: 'Self-complacency is fatal to progress.',
-    author: 'Margaret Sangster',
-  },
-  {
-    text: 'Peace comes from within. Do not seek it without.',
-    author: 'Buddha',
-  },
-  {
-    text: 'What you give is what you get.',
-    author: 'Byron Pulsifer',
-  },
-  {
-    text: 'We can only learn to love by loving.',
-    author: 'Iris Murdoch',
-  },
-  {
-    text: 'Life is change. Growth is optional. Choose wisely.',
-    author: 'Karen Clark',
-  },
-  {
-    text: "You'll see it when you believe it.",
-    author: 'Wayne Dyer',
-  },
-  {
-    text: 'Today is the tomorrow we worried about yesterday.',
-    author: null,
-  },
-  {
-    text: "It's easier to see the mistakes on someone else's paper.",
-    author: null,
-  },
-  {
-    text: 'Every man dies. Not every man really lives.',
-    author: null,
-  },
-  {
-    text: 'To lead people walk behind them.',
+    text: 'The flame that burns twice as bright burns half as long.',
     author: 'Lao Tzu',
   },
   {
-    text: 'Having nothing, nothing can he lose.',
-    author: 'William Shakespeare',
-  },
-  {
-    text: 'Trouble is only opportunity in work clothes.',
-    author: 'Henry J. Kaiser',
-  },
-  {
-    text: 'A rolling stone gathers no moss.',
-    author: 'Publilius Syrus',
-  },
-  {
-    text: 'Ideas are the beginning points of all fortunes.',
-    author: 'Napoleon Hill',
-  },
-  {
-    text: 'Everything in life is luck.',
-    author: 'Donald Trump',
-  },
-  {
-    text: 'Doing nothing is better than being busy doing nothing.',
+    text: 'Ordinary men hate solitude. But the Master makes use of it, embracing his aloneness, realizing he is one with the whole universe.',
     author: 'Lao Tzu',
   },
   {
-    text: 'Trust yourself. You know more than you think you do.',
-    author: 'Benjamin Spock',
-  },
-  {
-    text: 'Study the past, if you would divine the future.',
-    author: 'Confucius',
-  },
-  {
-    text: 'The day is already blessed, find peace within it.',
-    author: null,
-  },
-  {
-    text: 'From error to error one discovers the entire truth.',
-    author: 'Sigmund Freud',
-  },
-  {
-    text: 'Well done is better than well said.',
-    author: 'Benjamin Franklin',
-  },
-  {
-    text: 'Bite off more than you can chew, then chew it.',
-    author: 'Ella Williams',
-  },
-  {
-    text: 'Work out your own salvation. Do not depend on others.',
-    author: 'Buddha',
-  },
-  {
-    text: 'One today is worth two tomorrows.',
-    author: 'Benjamin Franklin',
-  },
-  {
-    text: 'Once you choose hope, anythings possible.',
-    author: 'Christopher Reeve',
-  },
-  {
-    text: 'God always takes the simplest way.',
-    author: 'Albert Einstein',
-  },
-  {
-    text: 'One fails forward toward success.',
-    author: 'Charles Kettering',
-  },
-  {
-    text: 'From small beginnings come great things.',
-    author: null,
-  },
-  {
-    text: 'Learning is a treasure that will follow its owner everywhere',
-    author: 'Chinese proverb',
-  },
-  {
-    text: 'Be as you wish to seem.',
-    author: 'Socrates',
-  },
-  {
-    text: 'The world is always in movement.',
-    author: 'V. Naipaul',
-  },
-  {
-    text: 'Never mistake activity for achievement.',
-    author: 'John Wooden',
-  },
-  {
-    text: 'What worries you masters you.',
-    author: 'Haddon Robinson',
-  },
-  {
-    text: 'One faces the future with ones past.',
-    author: 'Pearl Buck',
-  },
-  {
-    text: 'Goals are the fuel in the furnace of achievement.',
-    author: 'Brian Tracy',
-  },
-  {
-    text: 'Who sows virtue reaps honour.',
-    author: 'Leonardo da Vinci',
-  },
-  {
-    text: 'Be kind whenever possible. It is always possible.',
-    author: 'Dalai Lama',
-  },
-  {
-    text: "Talk doesn't cook rice.",
-    author: 'Chinese proverb',
-  },
-  {
-    text: 'He is able who thinks he is able.',
-    author: 'Buddha',
-  },
-  {
-    text: 'A goal without a plan is just a wish.',
-    author: 'Larry Elder',
-  },
-  {
-    text: 'To succeed, we must first believe that we can.',
-    author: 'Michael Korda',
-  },
-  {
-    text: 'Learn from yesterday, live for today, hope for tomorrow.',
-    author: 'Albert Einstein',
-  },
-  {
-    text: 'A weed is no more than a flower in disguise.',
-    author: 'James Lowell',
-  },
-  {
-    text: 'Do, or do not. There is no try.',
-    author: 'Yoda',
-  },
-  {
-    text: 'All serious daring starts from within.',
-    author: 'Harriet Beecher Stowe',
-  },
-  {
-    text: 'The best teacher is experience learned from failures.',
-    author: 'Byron Pulsifer',
-  },
-  {
-    text: 'Think how hard physics would be if particles could think.',
-    author: 'Murray Gell-Mann',
-  },
-  {
-    text: "Love is the flower you've got to let grow.",
-    author: 'John Lennon',
-  },
-  {
-    text: "Don't wait. The time will never be just right.",
-    author: 'Napoleon Hill',
-  },
-  {
-    text: 'Time is the wisest counsellor of all.',
-    author: 'Pericles',
-  },
-  {
-    text: 'You give before you get.',
-    author: 'Napoleon Hill',
-  },
-  {
-    text: 'Wisdom begins in wonder.',
-    author: 'Socrates',
-  },
-  {
-    text: 'Without courage, wisdom bears no fruit.',
-    author: 'Baltasar Gracian',
-  },
-  {
-    text: 'Change in all things is sweet.',
-    author: 'Aristotle',
-  },
-  {
-    text: 'What you fear is that which requires action to overcome.',
-    author: 'Byron Pulsifer',
-  },
-  {
-    text: 'When performance exceeds ambition, the overlap is called success.',
-    author: 'Cullen Hightower',
-  },
-  {
-    text: 'When deeds speak, words are nothing.',
-    author: 'African proverb',
-  },
-  {
-    text: 'Real magic in relationships means an absence of judgement of others.',
-    author: 'Wayne Dyer',
-  },
-  {
-    text: 'I never think of the future. It comes soon enough.',
-    author: 'Albert Einstein',
-  },
-  {
-    text: 'Skill to do comes of doing.',
-    author: 'Ralph Emerson',
-  },
-  {
-    text: 'Wisdom is the supreme part of happiness.',
-    author: 'Sophocles',
-  },
-  {
-    text: 'I believe that every person is born with talent.',
-    author: 'Maya Angelou',
-  },
-  {
-    text: 'Important principles may, and must, be inflexible.',
-    author: 'Abraham Lincoln',
-  },
-  {
-    text: 'The undertaking of a new action brings new strength.',
-    author: 'Richard Evans',
-  },
-  {
-    text: 'The years teach much which the days never know.',
-    author: 'Ralph Emerson',
-  },
-  {
-    text: 'Our distrust is very expensive.',
-    author: 'Ralph Emerson',
-  },
-  {
-    text: 'All know the way; few actually walk it.',
-    author: 'Bodhidharma',
-  },
-  {
-    text: 'Great talent finds happiness in execution.',
-    author: 'Johann Wolfgang von Goethe',
-  },
-  {
-    text: 'Faith in oneself is the best and safest course.',
-    author: 'Michelangelo',
-  },
-  {
-    text: 'Courage is going from failure to failure without losing enthusiasm.',
-    author: 'Winston Churchill',
-  },
-  {
-    text: 'The two most powerful warriors are patience and time.',
-    author: 'Leo Tolstoy',
-  },
-  {
-    text: 'Anticipate the difficult by managing the easy.',
+    text: 'Life is a series of natural and spontaneous changes. Do not resist them; that only creates sorrow. Let reality be reality. Let things flow naturally forward in whatever way they like.',
     author: 'Lao Tzu',
   },
   {
-    text: 'Those who are free of resentful thoughts surely find peace.',
-    author: 'Buddha',
+    text: 'The world belongs to those who let go.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'A short saying often contains much wisdom.',
-    author: 'Sophocles',
+    text: 'The truth is not always beautiful, nor beautiful words the truth.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'It takes both sunshine and rain to make a rainbow.',
-    author: null,
+    text: 'He who knows others is wise; he who knows himself is enlightened.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'A beautiful thing is never perfect.',
-    author: null,
+    text: 'Do you have the patience to wait until your mud settles and the water is clear?',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Only do what your heart tells you.',
-    author: 'Princess Diana',
+    text: 'He who controls others may be powerful, but he who has mastered himself is mightier still.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Life is movement-we breathe, we eat, we walk, we move!',
-    author: 'John Pierrakos',
+    text: 'New beginnings are often disguised as painful endings.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'No one can make you feel inferior without your consent.',
-    author: 'Eleanor Roosevelt',
+    text: 'The best fighter is never angry.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Argue for your limitations, and sure enough theyre yours.',
-    author: 'Richard Bach',
+    text: 'If you do not change direction, you may end up where you are heading.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Luck is what happens when preparation meets opportunity.',
-    author: 'Seneca',
+    text: 'When you are content to be simply yourself and don’t compare or compete, everyone will respect you',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Victory belongs to the most persevering.',
-    author: 'Napoleon Bonaparte',
+    text: 'What the caterpillar calls the end, the rest of the world calls a butterfly.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Love all, trust a few, do wrong to none.',
-    author: 'William Shakespeare',
+    text: 'The wise man is one who knows what he does not know.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'In order to win, you must expect to win.',
-    author: 'Richard Bach',
+    text: 'To attain knowledge, add things everyday. To attain wisdom, remove things every day.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'A goal is a dream with a deadline.',
-    author: 'Napoleon Hill',
+    text: 'There is no greater danger than underestimating your opponent.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'You can do it if you believe you can!',
-    author: 'Napoleon Hill',
+    text: 'Be content with what you have; rejoice in the way things are. When you realize there is nothing lacking, the whole world belongs to you.',
+    author: 'Lao Tzu',
   },
   {
-    text: "Set your goals high, and don't stop till you get there.",
-    author: 'Bo Jackson',
+    text: 'If you are depressed you are living in the past. If you are anxious you are living in the future. If you are at peace you are living in the present.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Every new day is another chance to change your life.',
-    author: null,
+    text: 'Respond to anger with virtue. Deal with difficulties while they are still easy. Handle the great while it is still small.',
+    author: 'Lao Tzu',
   },
   {
-    text: 'Smile, breathe, and go slowly.',
-    author: 'Thich Nhat Hanh',
-  },
-  {
-    text: 'Nobody will believe in you unless you believe in yourself.',
-    author: 'Liberace',
-  },
-  {
-    text: 'Do more than dream: work.',
-    author: 'William Arthur Ward',
-  },
-  {
-    text: 'No man was ever wise by chance.',
-    author: 'Seneca',
-  },
-  {
-    text: 'Some pursue happiness, others create it.',
-    author: null,
-  },
-  {
-    text: 'He that is giddy thinks the world turns round.',
-    author: 'William Shakespeare',
-  },
-  {
-    text: "Don't ruin the present with the ruined past.",
-    author: 'Ellen Gilchrist',
-  },
-  {
-    text: 'Do something wonderful, people may imitate it.',
-    author: 'Albert Schweitzer',
-  },
-  {
-    text: 'We do what we do because we believe.',
-    author: null,
-  },
-  {
-    text: 'Do one thing every day that scares you.',
-    author: 'Eleanor Roosevelt',
-  },
-  {
-    text: 'If you cannot be silent be brilliant and thoughtful.',
-    author: 'Byron Pulsifer',
-  },
-  {
-    text: 'Who looks outside, dreams; who looks inside, awakes.',
-    author: 'Carl Jung',
-  },
-  {
-    text: 'What we think, we become.',
-    author: 'Buddha',
-  },
-  {
-    text: 'The shortest answer is doing.',
-    author: 'Lord Herbert',
-  },
-  {
-    text: 'All our knowledge has its origins in our perceptions.',
-    author: 'Leonardo da Vinci',
-  },
-  {
-    text: 'The harder you fall, the higher you bounce.',
-    author: null,
-  },
-  {
-    text: 'Trusting our intuition often saves us from disaster.',
-    author: 'Anne Wilson Schaef',
-  },
-  {
-    text: 'Truth is powerful and it prevails.',
-    author: 'Sojourner Truth',
-  },
-  {
-    text: 'Light tomorrow with today!',
-    author: 'Elizabeth Browning',
-  },
-  {
-    text: 'Silence is a fence around wisdom.',
-    author: 'German proverb',
-  },
-  {
-    text: 'Society develops wit, but its contemplation alone forms genius.',
-    author: 'Madame de Stael',
-  },
-  {
-    text: 'The simplest things are often the truest.',
-    author: 'Richard Bach',
-  },
-  {
-    text: 'Everyone smiles in the same language.',
-    author: null,
-  },
-  {
-    text: 'Yesterday I dared to struggle. Today I dare to win.',
-    author: 'Bernadette Devlin',
-  },
-  {
-    text: 'No alibi will save you from accepting the responsibility.',
-    author: 'Napoleon Hill',
-  },
-  {
-    text: 'If you can dream it, you can do it.',
-    author: 'Walt Disney',
-  },
-  {
-    text: 'It is better to travel well than to arrive.',
-    author: 'Buddha',
-  },
-  {
-    text: "Life shrinks or expands in proportion to one's courage.",
-    author: 'Anais Nin',
-  },
-  {
-    text: 'You have to believe in yourself.',
+    text: 'In the midst of chaos, there is also opportunity.',
     author: 'Sun Tzu',
   },
   {
-    text: 'Our intention creates our reality.',
-    author: 'Wayne Dyer',
+    text: 'Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'Silence is a true friend who never betrays.',
-    author: 'Confucius',
+    text: 'Quickness is the essence of the war.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'Character develops itself in the stream of life.',
-    author: 'Johann Wolfgang von Goethe',
+    text: 'If you know the enemy and know yourself, you need not fear the result of a hundred battles.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'From little acorns mighty oaks do grow.',
-    author: 'American proverb',
+    text: 'Even the finest sword plunged into salt water will eventually rust.',
+    author: 'Sun Tzu',
   },
   {
-    text: "You can't stop the waves, but you can learn to surf.",
-    author: 'Jon Kabat-Zinn',
+    text: 'The wise warrior avoids the battle.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'Reality does not conform to the ideal, but confirms it.',
-    author: 'Gustave Flaubert',
+    text: 'It is easy to love your friend, but sometimes the hardest lesson to learn is to love your enemy.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'Speak low, if you speak love.',
-    author: 'William Shakespeare',
+    text: 'If his forces are united, separate them.',
+    author: 'Sun Tzu',
+  },
+
+  {
+    text: 'Move not unless you see an advantage; use not your troops unless there is something to be gained; fight not unless the position is critical.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'A really great talent finds its happiness in execution.',
-    author: 'Johann Wolfgang von Goethe',
+    text: 'Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'Reality leaves a lot to the imagination.',
-    author: 'John Lennon',
+    text: 'To know your enemy, you must become your enemy.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'The greatest remedy for anger is delay.',
-    author: 'Seneca',
+    text: 'Treat your men as you would your own beloved sons. And they will follow you into the deepest valley.',
+    author: 'Sun Tzu',
   },
   {
-    text: 'Growth itself contains the germ of happiness.',
-    author: 'Pearl Buck',
+    text: 'Appear weak when you are strong, and strong when you are weak.',
+    author: 'Sun Tzu',
   },
   {
-    text: "You can do what's reasonable or you can decide what's possible.",
-    author: null,
+    text: 'Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.',
+    author: 'Sun Tzu',
+  },
+  {
+    text: 'So in war, the way is to avoid what is strong, and strike at what is weak.',
+    author: 'Sun Tzu',
   },
 ];
