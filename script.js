@@ -3,14 +3,23 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
+const loader = document.getElementById('loader');
 
-
-
-
+//Show showLoadingspinner spinner
+function showLoadingspinner() {
+    loader.hidden = false;
+    quoteContainer.hidden = true;
+}
+// Hide showLoadingspinner spinner
+function showLoadingComplete(){
+    loader.hidden = true;
+    quoteContainer.hidden = false;
+}
 // let apiQuotes = [];
 
 // Show New Quote
 function newQuote(){
+    showLoadingspinner();
   // Pick a random quote from apiQuotes array
   const quote = localQuotes[Math.floor(Math.random()*localQuotes.length)];
   // Check if Author field is blank and replace it with 'unknown'
@@ -25,7 +34,9 @@ function newQuote(){
   } else {
     quoteText.classList.remove('long-quote');
   }
-  quoteText.textContent = quote.text;
+  // Set Quote, Hide Loader
+   quoteText.textContent = quote.text;
+   showLoadingComplete();
 }
 
 

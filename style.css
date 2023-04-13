@@ -78,6 +78,24 @@ button:active  {
     color: #38a1f3;
 }
 
+/* LOADER */
+.loader {
+    border: 15px solid #f3f3f3; 
+    border-top: 25px solid rgb(28, 88, 229);
+    border-right: 25px solid rgb(184, 191, 220);
+    border-bottom: 25px solid rgb(33, 7, 200);
+    border-left: 25px solid rgb(184, 191, 220);
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 /* Media query: tablet or smaller */
 @media screen and (max-width: 1000px) {
     .quote-container {
